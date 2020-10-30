@@ -1,0 +1,17 @@
+{
+    "name": "kfk-to-ora-connector",
+    "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+    "errors.log.enable": "true",
+    "topics": [
+      "oem-Recipe"
+    ],
+    "topics.regex": "",
+    "connection.url": "jdbc:oracle:thin:@ora-db:1521:TBL2",
+    "connection.user": "system",
+    "connection.password": "********",
+    "pk.mode": "none",
+    "auto.create": "true",
+    "auto.evolve": "true"
+  }
+  
+  

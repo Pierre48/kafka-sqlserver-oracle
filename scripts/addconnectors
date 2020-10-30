@@ -1,0 +1,5 @@
+echo deleting
+curl -X DELETE -H "Content-Type: application/json"  http://localhost:8083/connectors/ss-to-kfk-connector
+echo creating
+curl -X POST -H "Content-Type: application/json" -d  @scripts/ss-to-kfk-connector.json http://localhost:8083/connectors
+# curl -X POST -H "Content-Type: application/json" -d  @scripts/kfk-to-ora-connector.json http://localhost:8083/connectors

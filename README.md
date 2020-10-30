@@ -1,0 +1,1 @@
+This repository is a proof of concept about data replication from SQLServer to Oracle, based on Kafka connect

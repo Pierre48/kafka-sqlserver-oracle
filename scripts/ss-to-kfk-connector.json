@@ -1,0 +1,12 @@
+{
+    "name": "ss-to-kfk-connector",
+    "config": {
+        "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
+        "tasks.max": "1",
+        "connection.url": "jdbc:sqlserver://ss-db;user=sa;password=AComplexP@ssword",
+        "mode": "incrementing",
+        "incrementing.column.name": "id",
+        "topic.prefix": "oem-",
+        "name": "ss-to-kfk-connector"
+    }
+}
